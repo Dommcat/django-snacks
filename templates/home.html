@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="text-3xl text-yellow-700">Dommcat built this mutha flippin Home Page using Django + Tailwind CSS + Flowbite ya'll</h1>
+  {% for snack in snacks %}
+    <h2 class="text-red-700">Name: {{ snack.title }}</h2>
+    <p>Description: {{ snack.description }}</p>
+  {% endfor %}
+{% endblock content %}
